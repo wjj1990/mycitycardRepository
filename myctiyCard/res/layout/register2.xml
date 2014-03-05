@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/pane_whole_bg_ll"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout style="@style/titleBar_bg_ll">
+            <TextView android:id="@+id/titleTv" android:text="身份信息" style="@style/titleBar_title_tv" />
+        </LinearLayout>
+        <RelativeLayout android:background="@drawable/identity_whole_input" android:layout_width="266.6953dip" android:layout_height="wrap_content" android:layout_marginTop="60.0dip">
+            <EditText android:textColorHint="#ffb1b1b1" android:id="@+id/realname_et" android:background="@android:color/transparent" android:paddingLeft="35.0dip" android:layout_width="200.0dip" android:layout_height="30.0dip" android:layout_marginLeft="65.0dip" android:layout_marginTop="0.0dip" android:hint="姓        名" android:maxLines="1" android:singleLine="true" android:maxLength="20" style="@style/normal_black_tv" />
+            <EditText android:textColorHint="#ffb1b1b1" android:id="@+id/idNumber_et" android:background="@android:color/transparent" android:paddingLeft="35.0dip" android:paddingRight="10.0dip" android:longClickable="false" android:layout_width="200.0dip" android:layout_height="30.0dip" android:layout_marginLeft="65.0dip" android:layout_marginTop="42.0dip" android:hint="身份证号" android:maxLines="1" android:singleLine="true" android:maxLength="18" android:digits="0123456789X" android:inputType="textNoSuggestions" style="@style/normal_black_tv" />
+            <EditText android:textColorHint="#ffb1b1b1" android:id="@+id/idNumber_repeat_et" android:background="@android:color/transparent" android:paddingLeft="35.0dip" android:paddingRight="10.0dip" android:longClickable="false" android:layout_width="200.0dip" android:layout_height="30.0dip" android:layout_marginLeft="65.0dip" android:layout_marginTop="84.0dip" android:hint="确认身份证号" android:maxLines="1" android:singleLine="true" android:maxLength="18" android:digits="0123456789X" android:inputType="textNoSuggestions" style="@style/normal_black_tv" />
+            <TextView android:textColorHint="#ffb1b1b1" android:id="@+id/city_select" android:paddingLeft="35.0dip" android:paddingTop="4.0dip" android:paddingRight="30.0dip" android:layout_width="200.0dip" android:layout_height="25.0dip" android:layout_marginLeft="65.0dip" android:layout_marginTop="125.0dip" android:maxWidth="100.0dip" android:hint="城　　市(可选)" android:singleLine="true" style="@style/normal_black_tv" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/register2_pic22" android:layout_alignTop="@+id/city_select" android:layout_alignRight="@+id/city_select" />
+            <EditText android:id="@+id/address_et" android:background="@android:color/transparent" android:paddingLeft="6.0dip" android:layout_width="202.0dip" android:layout_height="56.0dip" android:layout_marginLeft="66.0dip" android:layout_marginTop="166.0dip" android:hint="输入详细地址(可选)" android:maxLines="3" style="@style/normal_black_tv" />
+        </RelativeLayout>
+        <Button android:id="@+id/nextBtn" android:background="@drawable/next_bt_selector" android:layout_marginTop="55.0dip" style="@style/wrap_view" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@+id/keyboard_view" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/whole_bg_ll"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/titleBar_bg_ll">
+        <TextView android:id="@+id/titleTv" android:text="@string/apply_title" style="@style/titleBar_title_tv" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_marginTop="20.0dip" style="@style/wrap_view">
+        <ImageView android:id="@+id/callRecharge_iv" android:visibility="gone" android:src="@drawable/call_recharge" android:onClick="onClick" style="@style/normal_black_tv" />
+        <ImageView android:id="@+id/bookFlight_iv" android:visibility="gone" android:layout_marginLeft="10.0dip" android:src="@drawable/book_flight" android:onClick="onClick" style="@style/normal_black_tv" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="30.0dip" android:layout_marginTop="10.0dip" style="@style/fill_width_view">
+        <ImageView android:id="@+id/qcoinRecharge_iv" android:visibility="gone" android:src="@drawable/qcoin_recharge" android:onClick="onClick" style="@style/normal_black_tv" />
+        <ImageView android:id="@+id/financingProducts_iv" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/financing_products" android:layout_weight="1.0" android:onClick="onClick" />
+        <ImageView android:id="@+id/nearbyMerchantsImageView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/nearby_merchants" android:layout_weight="1.0" android:onClick="onClick" />
+    </LinearLayout>
+</LinearLayout>

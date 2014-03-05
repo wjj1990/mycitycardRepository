@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/include_titlebar" />
+        <ImageView android:id="@+id/headIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_marginTop="4.0dip" android:src="@drawable/admin_icon" />
+    	<EditText android:id="@+id/xiugai_input" android:background="@drawable/xiugai_input" android:paddingLeft="100.0dip" android:layout_marginTop="10.0dip" android:hint="请输入用户名" android:singleLine="true" android:maxLength="11" android:inputType="number" style="@style/normal_black_tv" />
+    	<EditText android:id="@+id/xiugai_input1" android:background="@drawable/xiugai_input1" android:paddingLeft="100.0dip" android:hint="请在此输入手机号码" android:singleLine="true" android:maxLength="11" android:inputType="number" style="@style/normal_black_tv" />
+    	<EditText android:id="@+id/xiugai_input2" android:background="@drawable/xiugai_input2" android:paddingLeft="100.0dip" android:hint="请在此输入邮箱地址" android:singleLine="true" android:maxLength="11" android:inputType="number" style="@style/normal_black_tv" />
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/alterButton" android:background="@drawable/confirm_modify_pwd_bt_selector" android:layout_marginTop="5.0dip" style="@style/wrap_view" />
+    </LinearLayout>
+</ScrollView>

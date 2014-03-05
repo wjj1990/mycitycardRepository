@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+		
+        <!-- 标签条被设置android:visibility="gone"，表示本组件不可见，还不占用布局空间 -->
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:visibility="gone"/>
+        
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0" >
+        </FrameLayout>
+        
+        <!-- 使用单选按钮组来定义选项页面的标签头 -->
+        <RadioGroup android:id="@+id/main_tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tabbar_background"
+            android:orientation="horizontal">
+            
+            <RadioButton android:id="@+id/tab_main"
+                android:checked="true"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/tabbar_home_selector"
+                android:text="账户" />
+            
+            <RadioButton android:id="@+id/tab_msg"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/tabbar_msg_selector"
+                android:text="账单" />
+            
+            <RadioButton android:id="@+id/tab_acc"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/tabbar_acc_selector"
+                android:text="应用" />
+            
+            <RadioButton android:id="@+id/tab_search"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/tabbar_search_selector"
+                android:text="设置" />
+            
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

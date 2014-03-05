@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/whole_bg" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/include_titlebar" />
+        <ImageView android:id="@+id/icon" android:layout_width="60.0dip" android:layout_height="100.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/pre_icon" android:layout_below="@+id/topbar" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="35.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="美伽汇" android:layout_below="@+id/icon" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="20.0sp" android:textStyle="italic" android:textColor="@color/white" android:id="@+id/welcome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="欢迎来到美伽汇服务平台！" android:layout_below="@+id/title" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textStyle="italic" android:textColor="#ff93a9c1" android:id="@+id/desc" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="    美伽汇是由天津城市一卡通有限公司倾力打造的， 在已开展的市政公用服务基础上， 通过对各类资源的广泛整合，涵盖“吃、住、行\n、游、购、娱”等众多市民日常消费的行业， 面向用户提供刷卡消费、 打折优惠、 信息服\n务、 增值增惠等服务的综合性平台。" android:singleLine="false" android:layout_below="@+id/welcome" android:layout_centerHorizontal="true" />
+        <Button android:id="@+id/about_bt2" 
+            android:background="@drawable/customer_service_tel_bt_selector" 
+            android:layout_marginTop="15.0dip" 
+            android:layout_below="@+id/desc" 
+            android:layout_centerHorizontal="true" 
+            style="@style/wrap_view" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@+id/announce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="天津城市一卡通有限公司    版权所有" android:layout_below="@+id/about_bt2" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>

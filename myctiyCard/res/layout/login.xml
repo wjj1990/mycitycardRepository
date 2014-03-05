@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/whole_bg_ll"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/logo" android:layout_marginTop="50.0dip" style="@style/wrap_view" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/login_input" style="@style/wrap_view">
+            <EditText android:id="@+id/username_et" android:background="@android:color/transparent" android:paddingLeft="90.0dip" android:layout_width="268.0dip" android:layout_height="26.0dip" android:layout_marginTop="50.0dip" android:hint="用户名/身份证号码" android:singleLine="true" android:maxLength="20" style="@style/normal_black_tv" />
+            <EditText android:id="@+id/pwdEt" android:background="@android:color/transparent" android:paddingLeft="90.0dip" android:layout_width="268.0dip" android:layout_height="26.0dip" android:layout_marginTop="10.0dip" android:hint="密码" android:singleLine="true" android:maxLength="20" android:inputType="textPassword" android:imeOptions="actionDone" style="@style/normal_black_tv" />
+            <Button android:id="@+id/loginBtn" android:layout_gravity="center_horizontal" android:background="@drawable/login_bt_selector" android:layout_marginTop="16.0dip" style="@style/wrap_view" />
+        </LinearLayout>
+        <Button android:id="@+id/registerBtn" android:background="@drawable/register_bt_selector" android:layout_marginTop="12.0dip" style="@style/wrap_view" />
+    </LinearLayout>
+</ScrollView>

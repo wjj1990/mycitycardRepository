@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/pane_whole_bg_ll"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout style="@style/titleBar_bg_ll">
+            <TextView android:id="@+id/titleTv" android:text="系统设置" style="@style/titleBar_title_tv" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="270.0dip" android:layout_height="wrap_content">
+            <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_marginTop="20.0dip" android:text="个人信息" style="@style/normal_white_tv" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/round_cornor_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="15.0sp" android:textStyle="bold" android:gravity="left|center" android:id="@+id/accountDataModifyBtn" android:background="@drawable/line_bg" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="账户资料修改" android:drawableLeft="@drawable/icon_modify_user_account" android:drawableRight="@drawable/more" android:drawablePadding="8.0dip" />
+                <ImageView android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <Button android:textSize="15.0sp" android:textStyle="bold" android:gravity="left|center" android:id="@+id/promptModifyBtn" android:background="@drawable/line_bg" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="修改密保问题和答案" android:drawableLeft="@drawable/icon_user_modify_password_protection" android:drawableRight="@drawable/more" android:drawablePadding="8.0dip" />
+                <ImageView android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <Button android:textSize="15.0sp" android:textStyle="bold" android:gravity="left|center" android:id="@+id/pwdManageBtn" android:background="@drawable/line_bg" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="登录密码修改" android:drawableLeft="@drawable/icon_user_modify_passward" android:drawableRight="@drawable/more" android:drawablePadding="8.0dip" />
+                <ImageView android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <Button android:textSize="15.0sp" android:textStyle="bold" android:gravity="left|center" android:id="@+id/tokenManageBtn" android:background="@drawable/line_bg" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="手机令牌" android:drawableLeft="@drawable/icon_mobile_token" android:drawableRight="@drawable/more" android:drawablePadding="8.0dip" />
+            </LinearLayout>
+            <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_marginTop="8.0dip" android:text="系统功能" style="@style/normal_white_tv" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/round_cornor_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="15.0sp" android:textStyle="bold" android:gravity="left|center" android:id="@+id/aboutBtn" android:background="@drawable/line_bg" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="关于美伽汇" android:drawableLeft="@drawable/icon_about" android:drawableRight="@drawable/more" android:drawablePadding="8.0dip" />
+                <ImageView android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <Button android:textSize="15.0sp" android:textStyle="bold" android:gravity="left|center" android:id="@+id/helpBtn" android:background="@drawable/line_bg" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="美伽汇功能介绍" android:drawableLeft="@drawable/icon_introduction" android:drawableRight="@drawable/more" android:drawablePadding="8.0dip" />
+                <ImageView android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <Button android:textSize="15.0sp" android:textStyle="bold" android:gravity="left|center" android:id="@+id/removeCacheBtn" android:background="@drawable/line_bg" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="清除图片缓存 " android:drawableLeft="@drawable/icon_image_cache" android:drawableRight="@drawable/more" android:drawablePadding="8.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="20.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/quitBtn" android:background="@drawable/button" android:layout_width="270.0dip" android:layout_marginTop="8.0dip" android:text="退出登录" style="@style/wrap_view" />
+        <TextView android:textColor="@color/orange" android:id="@+id/apk_version" android:layout_marginTop="8.0dip" android:text="程序版本:1.5.12" style="@style/normal_white_tv" />
+    </LinearLayout>
+</ScrollView>

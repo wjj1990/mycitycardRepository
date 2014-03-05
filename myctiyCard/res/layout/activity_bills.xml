@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  	<LinearLayout style="@style/titleBar_bg_ll">
+        <TextView android:id="@+id/titleTv" android:text="@string/bill_title" style="@style/titleBar_title_tv" />
+    </LinearLayout>
+    
+  	<TabHost android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <RadioGroup
+            android:id="@+id/main_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.08"
+           
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/main_hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:text="@string/tab_bills1"
+                android:textColor="@color/radiotext_colot" />
+
+            <RadioButton
+                android:id="@+id/main_prop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:gravity="center"
+                 android:text="@string/tab_bills2"
+                android:paddingLeft="0dp"
+                android:textColor="@color/radiotext_colot" />
+
+            <RadioButton
+                android:id="@+id/main_emulator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                 android:text="@string/tab_bills3"
+                android:textColor="@color/radiotext_colot" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/main_tabline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/tab_bottomline"
+             />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.92" />
+    </LinearLayout>
+
+</TabHost>
+</LinearLayout>
+
